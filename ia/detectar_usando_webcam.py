@@ -10,7 +10,7 @@ cap = cv2.VideoCapture(0)
 
 # Carrega o modelo YOLO a partir de um arquivo de peso pré-treinado ('yolo11n.pt').
 # YOLO (You Only Look Once) é uma técnica de detecção de objetos em tempo real.
-model = YOLO("yolo11n.pt")  # Carrega o modelo YOLO para fazer a detecção de objetos no vídeo.
+model = YOLO("yolo11m.pt")  # Carrega o modelo YOLO para fazer a detecção de objetos no vídeo.
 
 # 'track_history' é um dicionário com listas de histórico de rastreamento para cada objeto detectado.
 track_history = defaultdict(lambda: [])  
