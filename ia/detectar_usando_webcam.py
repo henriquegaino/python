@@ -15,7 +15,7 @@ model = YOLO("yolo11m.pt")  # Carrega o modelo YOLO para fazer a detecção de o
 # 'track_history' é um dicionário com listas de histórico de rastreamento para cada objeto detectado.
 track_history = defaultdict(lambda: [])  
 seguir = True  # Controla se o rastreamento deve ser feito.
-deixar_rastro = False  # Define se será desenhada uma linha para indicar o rastro do objeto.
+deixar_rastro = True  # Define se será desenhada uma linha para indicar o rastro do objeto.
 
 # Inicia um loop infinito para processar o vídeo quadro a quadro.
 while True:  
